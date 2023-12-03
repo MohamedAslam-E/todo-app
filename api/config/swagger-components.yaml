@@ -1,0 +1,28 @@
+components:
+  schemas:
+    GeneralError:
+      type: object
+      properties:
+        data:
+          type: any
+        error:
+          type: string 
+      example:
+        data: null
+        error: something went wrong.
+    BadRequestError:
+      type: object
+      properties:
+        data: 
+          type: any
+        error: 
+          type: string   
+    Todo:
+      type: object
+      properties:
+        task:
+          type: string  
+          description: add task 
+          example: 'running'   
+      example:
+        task: 'running'                
