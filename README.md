@@ -9,24 +9,11 @@
 - Swagger based documentations are generated at `/docs` route (`http://localhost:2001/api/docs`)
   
 ### Packaging 
-- for windows
+- for windows: npm run build:win
+  This command will generate the Windows installer in the dist directory.
+- for mac: npm run build:mac
+  This command will generate the macOS installer in the dist directory.
+- for linux: npm run build:linux
+  This command will generate the Linux installer in the dist directory.
 
-- Building
-To build the application, use the following commands based on your platform:
 
-Windows
-bash
-Copy code
-npm run build:win
-This command will generate the Windows installer in the dist directory.
-
-macOS
-bash
-Copy code
-npm run build:mac
-This command will generate the macOS installer in the dist directory.
-
-Linux
-bash
-Copy code
-npm run build:linux
