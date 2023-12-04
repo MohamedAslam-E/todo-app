@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import AddItemForm from './AddItemForm'
-import { Button } from 'react-bootstrap'
+import { Button, Row, Col } from 'react-bootstrap'
 
 function TodoList() {
   const [data, setData] = useState([])
@@ -44,20 +44,31 @@ function TodoList() {
 
   return (
     <>
-      <AddItemForm onTaskCreate={onTaskCreate} />
-      <div className="bar">
-        {data.map((task, index) => {
-          return (
-            <div className="d-flex tasks" key={index}>
-              <div className="task_bar" onClick={() => handleEdit(task._id)}>
-                <p className={task.completed ? 'line_through' : ''}>{task.task}</p>
-              </div>
-              <div>
-                <Button onClick={() => onDelete(task._id)}>Delete</Button>
-              </div>
-            </div>
-          )
-        })}
+      <div className="mt-5">
+        <AddItemForm onTaskCreate={onTaskCreate} />
+        <div className="bar">
+          {data.map((task, index) => {
+            return (
+              <Row key={index}>
+                <div className="tasks align-items-center d-flex mt-2" key={index}>
+                  <Col>
+                    <div
+                      className="task_bar border rounded text-center align-items-center"
+                      onClick={() => handleEdit(task._id)}
+                    >
+                      <p className={task.completed ? 'line_through' : ''}>{task.task}</p>
+                    </div>
+                  </Col>
+                  <Col>
+                    <div className="">
+                      <Button onClick={() => onDelete(task._id)}>Delete</Button>
+                    </div>
+                  </Col>
+                </div>
+              </Row>
+            )
+          })}
+        </div>
       </div>
     </>
   )

@@ -1,5 +1,5 @@
 {
-  "name": "see",
+  "name": "todo",
   "version": "1.0.0",
   "description": "An Electron application with React",
   "main": "./out/main/index.js",

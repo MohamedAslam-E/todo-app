@@ -3,7 +3,7 @@
 }
 .task_bar {
   margin-right: 20px;
-  color: white;
+  font-size: x-large;
 }
 .line_through {
   text-decoration: line-through;
