@@ -5,6 +5,7 @@ import swaggerSpec from './config/swagger-config.js';
 import cors from 'cors'
 import mongoose from 'mongoose';
 import rateLimit from 'express-rate-limit';
+import helmet from 'helmet';
 
 const app = express();
 const PORT = process.env.PORT || 2001
@@ -29,6 +30,7 @@ const swaggerOptions = {
 
 app.use(express.json());
 app.use(cors());
+app.use(helmet());
 
 app.use('/api',router)
 app.use('/api/docs',swaggerUi.serve,swaggerUi.setup(swaggerSpec,swaggerOptions))
@@ -44,7 +46,7 @@ app.use(
       },
     }),
   );
-  
+
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`)
 })

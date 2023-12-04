@@ -1,14 +1,15 @@
-import React, { useState } from "react";
-import { Button, Form, InputGroup, FormControl } from "react-bootstrap";
+import { useState } from 'react'
+import { Button, Form, InputGroup, FormControl } from 'react-bootstrap'
 
+// eslint-disable-next-line
 function AddItemForm({ onTaskCreate }) {
-  const [newTask, setNewTask] = useState("");
+  const [newTask, setNewTask] = useState('')
 
   const onCreate = (e) => {
-    e.preventDefault();
-    onTaskCreate(newTask);
-    setNewTask("");
-  };
+    e.preventDefault()
+    onTaskCreate(newTask)
+    setNewTask('')
+  }
 
   return (
     <>
@@ -26,7 +27,7 @@ function AddItemForm({ onTaskCreate }) {
         </InputGroup>
       </Form>
     </>
-  );
+  )
 }
 
-export default AddItemForm;
+export default AddItemForm
