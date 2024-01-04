@@ -11,7 +11,7 @@ This repository contains a ToDo application built with Electron.js (frontend) an
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+1. Clone the repository: `git clone https://github.com/MohamedAslam-E/todo-app.git`
 2. Navigate to the project directory: `cd your-repo`
 3. Install dependencies: `npm install`
 4. Start the app: `npm start`
