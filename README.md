@@ -31,18 +31,6 @@ This repository contains a ToDo application built with Electron.js (frontend) an
 
 - Swagger based documentations are generated at `/docs` route (`http://localhost:2001/api/docs`)
 
-## Getting Started
-
-1. Clone the repository: `git clone https://github.com/MohamedAslam-E/todo-app.git`
-2. Navigate to the project directory: `cd your-repo`
-3. Install dependencies: `npm install`
-4. Start the app: `npm start`
-
-## Technologies Used
-
-- **Electron.js:** Framework for cross-platform desktop applications.
-- **Node.js:** JavaScript runtime for server-side development.
-
 ## Packaging
 
 - for windows: `npm run build:win`
@@ -51,7 +39,3 @@ This repository contains a ToDo application built with Electron.js (frontend) an
   This command will generate the macOS installer in the dist directory.
 - for linux: `npm run build:linux`
   This command will generate the Linux installer in the dist directory.
-
-## Contributing
-
-Please follow our [Contribution Guidelines](CONTRIBUTING.md) if you'd like to contribute.
