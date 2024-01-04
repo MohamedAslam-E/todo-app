@@ -43,7 +43,7 @@ This repository contains a ToDo application built with Electron.js (frontend) an
 - **Electron.js:** Framework for cross-platform desktop applications.
 - **Node.js:** JavaScript runtime for server-side development.
 
-### Packaging
+## Packaging
 
 - for windows: `npm run build:win`
   This command will generate the Windows installer in the dist directory.
@@ -51,14 +51,6 @@ This repository contains a ToDo application built with Electron.js (frontend) an
   This command will generate the macOS installer in the dist directory.
 - for linux: `npm run build:linux`
   This command will generate the Linux installer in the dist directory.
-
-## Contributing
-
-Please follow our [Contribution Guidelines](CONTRIBUTING.md) if you'd like to contribute.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE.md).
 
 ## Contributing
 
